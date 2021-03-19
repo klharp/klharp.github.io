@@ -44,13 +44,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active " href="../index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="../data.html">Data</a></li>
          <!-- <li><a href="services.html">Services</a></li>-->
           <li><a href="../compare.html">Compare</a></li>
          <!-- <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>-->
-          <li class="dropdown"><a href="#"><span>Plots</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"  class="active"><span>Plots</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="temperature.html">Temperature</a></li>
               <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -77,21 +77,6 @@
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Visualize</h2>
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li>Humidity</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
     <!-- ======= About Section ======= -->
     <section class="about" data-aos="fade-up">
       <div class="container">
@@ -103,19 +88,17 @@
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h3>Humidity</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            A Python script was used to visualize the weather of 500+
+            randomly chosen cities across the world, at varying
+            distances from the equator. Out of the 601 randomly chosen
+            cities, only 547 were used in the analysis. The remaining
+            were eliminated due to incomplete data.        
             </p>
             <ul>
-              <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bi bi-check2-circle"></i>There are more representative cities in the northern hemisphere, due to the northern hemisphere having more landmass.</li>
+               <li><i class="bi bi-check2-circle"></i>Generally, humidity levels (100% or less) greatly vary across the globe, though higher humidity levels are the majority (greater than 60%), especially in the latitudes between 30 and 70.
+              <li><i class="bi bi-check2-circle"></i>The northern hemisphere tends to be more humid than the southern.</li>
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
           </div>
         </div>
 
@@ -132,8 +115,8 @@
             <div class="icon-box icon-box-pink">
               <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div>-->
              <a href="temperature.html"><img alt="temperature" src="../assets/img/LatTemp.png" class="img-fluid"></a>
-              <h4 class="title"><a href="">Temperature</a></h4>
-              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+              <h4 class="title"><a href="temperature.html">Temperature</a></h4>
+              <p class="description">Plot showing the relationship between temperature and latitude. </p>
             </div>
           </div>
 
@@ -141,8 +124,8 @@
             <div class="icon-box icon-box-cyan">
               <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
              <a href="humidity.html"><img alt="humidity" src="../assets/img/LatHum.png" class="img-fluid"></a>
-              <h4 class="title"><a href="">Humidity</a></h4>
-              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+              <h4 class="title"><a href="humidity.html">Humidity</a></h4>
+              <p class="description">Plot showing the relationship between humidity and latitude. </p>
             </div>
           </div>
 
@@ -150,8 +133,8 @@
             <div class="icon-box icon-box-green">
              <!--  <div class="icon"><i class="bx bx-tachometer"></i></div> -->
               <a href="cloudcover.html"><img alt="cloudiness" src="../assets/img/LatCloud.png" class="img-fluid"></a>
-              <h4 class="title"><a href="">Cloud Cover</a></h4>
-              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+              <h4 class="title"><a href="cloudcover.html">Cloud Cover</a></h4>
+              <p class="description">Plot showing the relationship between cloud cover (cloudiness) and latitude. </p>
             </div>
           </div>
 
@@ -159,8 +142,8 @@
             <div class="icon-box icon-box-blue">
              <!-- <div class="icon"><i class="bx bx-world"></i></div>-->
               <a href="windspeed.html"><img alt="wind speed" src="../assets/img/LatWind.png" class="img-fluid"></a>
-              <h4 class="title"><a href="">Wind Speed</a></h4>
-              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+              <h4 class="title"><a href="windspeed.html">Wind Speed</a></h4>
+              <p class="description">Plot showing the relationship between wind speed and latitude. </p>
             </div>
           </div>
 
@@ -201,10 +184,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="visualize.html">Visualize</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="compare.html">Compare</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../about.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../data.html">Data</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../compare.html">Compare</a></li>
               <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
             </ul>
           </div>
@@ -227,12 +210,11 @@
               <strong>Phone:</strong> +1 651.283.8601<br>
               <strong>Email:</strong> kharp@umn.edu<br>
             </p>-->
-
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Harp Design, Inc.</h3>
-            <p>Visualizing sustainability. Harp Design provides consulting services in the areas of sustainability and energy-efficiency.</p>
+            <h2>Harp Design, Inc.</h2>
+            <h3>Visualizing Sustainability</h3>
             <div class="social-links mt-3">
              <a href="https://github.com/klharp" class="github" target="_blank"><i class="bx bxl-github"></i></a>
              <a href="https://www.linkedin.com/in/kerryhaglund/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
@@ -249,7 +231,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Harp Design, Inc.</span></strong>. All Rights Reserved
+       &copy; 2021 <strong><span>Harp Design, Inc.</span></strong> All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
