@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kerry Harp, Web Visualization</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.0.1
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Latitude with Attitude</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="index.html">Home</a></li>
+          <li><a href="data.html">Data</a></li>
+         <!-- <li><a href="services.html">Services</a></li>-->
+          <li><a href="compare.html">Compare</a></li>
+         <!-- <li><a href="team.html">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>-->
+          <li class="dropdown"><a href="#"><span>Plots</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="visualization/temperature.html">Temperature</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="visualization/humidity.html">Humidity</a></li>
+              <li><a href="visualization/cloudcover.html">Cloud Cover</a></li>
+              <li><a href="visualization/windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+         <!-- <li><a href="contact.html">Contact Us</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">WELCOME <br/>Weather Visualization Dashboard</h2>
+          <p class="animate__animated animate__fadeInUp">Visualize the weather from over 500 cities.</p>
+          <a href="about.html" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">It's about the Latitude</h2>
+          <p class="animate__animated animate__fadeInUp">The latitude and longitude marks the spot.</p>
+          <a href="about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Choose your Metric</h2>
+          <p class="animate__animated animate__fadeInUp">Temperature, humidity, cloudiness, windspeed &mdash; or all of them &mdash; choose what is important for you.</p>
+          <a href="about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Welcome</h2>
+          <p>Explore the data where the ideal weather conditions exist for a future vacation. The data is based on latitude and longitude of 500+ randomly chosen cities showing the temperature, humidity, cloud cover, and wind speed based on latitude.</p>
+        </div>
+
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div>-->
+             <a href="visualization/temperature.html"><img alt="temperature" src="assets/img/LatTemp.png" class="img-fluid"></a>
+              <h4 class="title"><a href="">Temperature</a></h4>
+              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
+             <a href="visualization/humidity.html"><img alt="humidity" src="assets/img/LatHum.png" class="img-fluid"></a>
+              <h4 class="title"><a href="">Humidity</a></h4>
+              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-green">
+             <!--  <div class="icon"><i class="bx bx-tachometer"></i></div> -->
+              <a href="visualization/cloudcover.html"><img alt="cloudiness" src="assets/img/LatCloud.png"  class="img-fluid""></a>
+              <h4 class="title"><a href="">Cloud Cover</a></h4>
+              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-blue">
+             <!-- <div class="icon"><i class="bx bx-world"></i></div>-->
+              <a href="visualization/windspeed.html"><img alt="wind speed" src="assets/img/LatWind.png" class="img-fluid"></a>
+              <h4 class="title"><a href="">Wind Speed</a></h4>
+              <p class="description">xxx xxxxx xxxx xxxx xxxx xxxxx xxxx xx xxxxx x xxxx xxx xxxx xxx </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+  </main><!-- End #main -->
+
+        <div class="col-lg-12">
+         <img   alt="beach" src="assets/img/beach.jpg"  class="img-fluid">
+         </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <!--<div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="visualize.html">Visualize</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="compare.html">Compare</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+           <!-- <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>-->
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+           <!-- <h4>Contact Us</h4>
+            <p>
+              Minnesota: Minneapolis / St. Paul metropolitan area <br><br>
+              <strong>Phone:</strong> +1 651.283.8601<br>
+              <strong>Email:</strong> kharp@umn.edu<br>
+            </p>-->
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Harp Design, Inc.</h3>
+            <p>Visualizing sustainability. Harp Design provides consulting services in the areas of sustainability and energy-efficiency.</p>
+            <div class="social-links mt-3">
+             <a href="https://github.com/klharp" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+             <a href="https://www.linkedin.com/in/kerryhaglund/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+             <a href="https://twitter.com/design_harp" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/HarpDesignInc" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/harpdesigninc/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Harp Design, Inc.</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
