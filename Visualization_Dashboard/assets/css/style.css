@@ -1310,6 +1310,7 @@ section {
   color: rgba(255, 255, 255, 0.6);
   font-size: 28px;
   transition: 0.3s;
+  color: #68A4C4; 
 }
 
 .portfolio .portfolio-item .portfolio-info a i:hover {
@@ -2300,5 +2301,17 @@ section {
 
 #footer .credits a {
   color: #a2cce3;
+}
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 400px) {  
+    .table-responsive {
+        font-size:10px !important;
+    }
 }
 
