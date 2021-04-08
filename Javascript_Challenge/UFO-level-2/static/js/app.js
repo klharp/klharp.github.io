@@ -44,16 +44,39 @@ function runEnter() {
   d3.event.preventDefault();
   
   // Get the value property of the input element
-  var inputElement = d3.select("#datetime");
-  var inputValue = inputElement.property("value");
+  var inputElement1 = d3.select("#datetime");
+  var inputElement2 = d3.select("#city");
+  var inputElement3 = d3.select("#state");
+  var inputElement4 = d3.select("#country");
+  var inputElement5 = d3.select("#shape");
 
-  console.log(inputElement);
-  console.log(inputValue);
+  var inputValue1 = inputElement1.property("value");
+  var inputValue2 = inputElement2.property("value");
+  var inputValue3 = inputElement3.property("value");
+  var inputValue4 = inputElement4.property("value");
+  var inputValue5 = inputElement5.property("value");
 
+  console.log(inputElement1);
+  console.log(inputValue1);
+  console.log(inputElement2);
+  console.log(inputValue2);  
+  console.log(inputElement3);
+  console.log(inputValue3); 
+  console.log(inputElement4);
+  console.log(inputValue4);  
+  console.log(inputElement5);
+  console.log(inputValue5);
+  
   tbody.html("");
 
   // filter by input date
-  var results = tableData.filter(tableData => tableData.datetime === inputValue);
+  // check if condition is met in javascript, || are used instead of python keyword "or"
+  var results = tableData.filter(tableData => (tableData.datetime === inputValue1 || inputValue1 === "") && 
+  (tableData.city === inputValue2  || inputValue2 === "") && 
+  (tableData.state === inputValue3   || inputValue3 === "") && 
+  (tableData.country === inputValue4  || inputValue4 === "") && 
+  (tableData.shape === inputValue5  || inputValue5 === "")
+  );
 
   //loop through data to get results and create dynamic table
   results.forEach((UFOobject) => {
