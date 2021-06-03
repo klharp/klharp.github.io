@@ -9,6 +9,7 @@
 * 	Color Palette
 *	Light Gray: cbcdcb
 *	Steel Blue: 617d86
+*	Dark Steel Blue: 02486e
 *	Brick Red:: c24c52
 *	Dark Gray: 4c5355
 *	Background: f5f5f5
@@ -624,7 +625,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 .fh5co-heading-colored {
-  color: #c24c52;
+  color: #02486e;
   font-size: 30px;
 }
 
